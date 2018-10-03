@@ -4,5 +4,53 @@
 /*font from google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins');
 
-body{font-family: font-family: 'Poppins', sans-serif;
+
+
+body {
+	background-color: black;
+	margin: 0px 100px;
+	
+}
+
+.container {
+	background-color: black;
+	border: 1px solid rgba(228,9,13,1.00);
+	min-height: 1000px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 150px auto 100px;
+	grid-template-areas: 
+		"h h h h h h h h h h h h"
+		"m m m m m m m m m s s s"
+		"f f f f f f f f f f f f";
+}
+
+.header {
+	text-align: center;
+	background-color: cyan;
+	grid-area: h;
+}
+
+.main {
+	background-color: red;
+	grid-area: m;
+	
+}
+
+.frame{
+	background-color: orange;
+	width: 200px;
+	height: 300px;
+	float: left;
+}
+
+.sidebar {
+	background-color: green;
+	grid-area: s;
+}
+
+.footer {
+	background-color: yellow;
+	grid-area: f;
 }
