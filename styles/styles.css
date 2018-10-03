@@ -14,12 +14,10 @@ body {
 
 .container {
 	background-color: black;
-	border: 1px solid rgba(228,9,13,1.00);
-	min-height: 1000px;
+	/*border: 1px solid rgba(228,9,13,1.00);*/
 	display: grid;
-	grid-gap: 10px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 150px auto 100px;
+	grid-template-rows: 150px auto 120px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"m m m m m m m m m s s s"
@@ -27,30 +25,90 @@ body {
 }
 
 .header {
+	color: white;
+	background-color: black;
 	text-align: center;
-	background-color: cyan;
 	grid-area: h;
 }
 
 .main {
-	background-color: red;
+	color: white;
+	background-color: #101418;
 	grid-area: m;
 	
 }
 
 .frame{
-	background-color: orange;
+	color: white;
+	background-color: #ff5400;
 	width: 200px;
 	height: 300px;
 	float: left;
 }
 
 .sidebar {
-	background-color: green;
+	color: white;
+	background-color: #ff5400;
 	grid-area: s;
+	
+	display: grid;
+	grid-template-columns: 6px auto;
+	grid-template-rows: auto auto;
+}
+
+.solid1 {
+	background: #fff000;
+}
+
+.menu1 {
+	color: #fff000;
+	background-color: #101418;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.solid2 {
+	background-color: #ff0078;
+}
+
+.menu2 {
+	color: #ff0078;
+	background-color: #101418;
+}
+
+.solid3 {
+	background-color: #ff5400;
+}
+
+.menu3 {
+	color: #ff5400;
+	background-color: #101418;
+}
+
+.solid4 {
+	background: #00ff0c;
+}
+
+.menu4 {
+	color: #00ff0c;
+	background-color: #101418;
+}
+
+.solid5 {
+	background: #0054ff;
+}
+
+.menu5 {
+	color: #0054ff;
+	background-color: #101418;
 }
 
 .footer {
-	background-color: yellow;
+	color: white;
+	background-color: black;
 	grid-area: f;
+}
+
+p {
+	color: #373737;
 }
