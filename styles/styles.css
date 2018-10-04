@@ -4,6 +4,7 @@
 /*font from google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
 
 body {
@@ -13,10 +14,11 @@ body {
 }
 
 .container {
-	background-color: black;
+	background-color: #101418;
 	/*border: 1px solid rgba(228,9,13,1.00);*/
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	height: 800px;
+	grid-template-columns: repeat (12, 1fr);
 	grid-template-rows: 150px auto 120px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
@@ -32,6 +34,9 @@ body {
 }
 
 .main {
+	border: 1px solid rgba(228,9,13,1.00);
+	margin-top: 20px;
+	margin-bottom: 20px;
 	color: white;
 	background-color: #101418;
 	grid-area: m;
@@ -47,6 +52,10 @@ body {
 }
 
 .sidebar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 0px;
 	color: white;
 	background-color: #ff5400;
 	grid-area: s;
@@ -56,6 +65,24 @@ body {
 	grid-template-rows: auto auto;
 }
 
+h2 {
+	margin: 0px;
+	align: top;
+	padding: 0px 0px 0px 25px;
+	/*border: 1px solid rgba(228,9,13,1.00);*/
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif; 
+}
+
+p {
+	margin: 0px;
+	align: top;
+	padding: 0px 25px 0px 25px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: #373737;
+}
+
 .solid1 {
 	background: #fff000;
 }
@@ -63,8 +90,6 @@ body {
 .menu1 {
 	color: #fff000;
 	background-color: #101418;
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 .solid2 {
@@ -109,6 +134,3 @@ body {
 	grid-area: f;
 }
 
-p {
-	color: #373737;
-}
