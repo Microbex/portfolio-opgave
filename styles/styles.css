@@ -10,7 +10,7 @@
 body {
 	background-color: black;
 	margin: 0px 100px;
-	
+
 }
 
 .container {
@@ -18,12 +18,12 @@ body {
 	/*border: 1px solid rgba(228,9,13,1.00);*/
 	display: grid;
 	height: 800px;
-	grid-template-columns: repeat (6, 1fr);
-	grid-template-rows: 150px auto 120px;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 130px auto 100px;
 	grid-template-areas: 
-		"h h h h h h"
-		"m m m m m s"
-		"f f f f f f";
+		"h h h h h h h h"
+		"m m m m m m m s"
+		"f f f f f f f f";
 }
 
 .header {
@@ -34,9 +34,9 @@ body {
 }
 
 .main {
-	/*border: 1px solid rgba(228,9,13,1.00);*/
 	margin-top: 20px;
 	margin-bottom: 20px;
+	/*border: 1px solid rgba(228,9,13,1.00);*/
 	color: white;
 	background-color: #101418;
 	grid-area: m;
@@ -46,6 +46,7 @@ body {
 .frame{
 	color: white;
 	background-color: #ff5400;
+	/*margin: 15px;*/
 	width: 200px;
 	height: 300px;
 	float: left;
@@ -54,14 +55,12 @@ body {
 .sidebar {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-top: 20px;
-	padding: 0px;
-	color: white;
-	background-color: #ff5400;
+	background-color: #101418;
 	grid-area: s;
 	
 	display: grid;
-	grid-template-columns: 4px auto;
+	grid-template-columns: 1px 300px;
+	grid-template-rows: 5;
 	
 }
 
@@ -69,7 +68,6 @@ h2 {
 	margin: 0px;
 	align: top;
 	padding: 0px 0px 0px 25px;
-	/*border: 1px solid rgba(228,9,13,1.00);*/
 	font-size: 25px;
 	font-family: 'Roboto', sans-serif; 
 }
@@ -77,10 +75,10 @@ h2 {
 p {
 	margin: 0px;
 	align: top;
-	padding: 0px 25px 0px 25px;
+	padding: 0px 0px 0px 25px;
 	font-size: 15px;
 	font-family: sans-serif;
-	color: #515151;
+	color: #373737;
 }
 
 .solid1 {
